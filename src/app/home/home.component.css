@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Sora:wght@100..800&display=swap');
+
+
+body{
+    font-family: "Lora", serif;
+    padding: 0px;
+    margin: 0px;
+    background: #f4f4f4;
+}
+.header_user_iocn {
+    margin: 16px;
+    text-align: right;
+}
+.product_img img{
+    width: 100%;
+    -webkit-transition: opacity 1s, -webkit-transform 1s;
+    transition: opacity 1s, transform 1s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+.product_box {
+    width: 19%;
+}
+.product_box:hover .product_img img {
+    box-sizing: border-box;
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+    opacity: 1;
+}
+.product_box:hover{
+    cursor: pointer;
+}
+.product_info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.product_section {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 48px;
+}
+.product_price {
+    font-size: 12px;
+    letter-spacing: 0.36px;
+    color: #898989;
+}
+.product_info h3 {
+    font-size: 18px;
+    color: #141414;
+    font-weight: 600;
+    margin: 0;
+}
+.product_info h3 span{
+    color: #a8917f;
+}
+
+.product_size,.product_rental_price{
+    font-size: 16px;
+    color: #383838;
+}
+
+.powered_by_info{
+    font-size: 12px;
+    font-family: "Sora", sans-serif;
+    text-align: right;
+    color: #898989;
+    margin:55px 16px 16px 16px;
+    box-sizing: border-box;
+}
+.container {
+    width: 1300px;
+    margin: 0 auto;
+    max-width: 95%;
+}
+.product_img {
+    overflow: hidden;
+}
+
+@media (max-width:1299px) {
+    .product_box{width: 23%;}
+}
+
+
+@media (max-width:767px) {
+    .product_box{width: 31%;}
+    .product_section{gap: 14px;row-gap: 28px;}
+    
+}
+
+@media (max-width:575px) {
+    .product_box{width: 48%;}
+    .container{max-width: 75%;}
+    .product_section{row-gap: 48px;}
+ }
+
+ @media (max-width:480px) {
+    .product_box{width: 100%;gap: 0;}
+    .container{max-width: 65%;}
+
+ }
+
+ @media (max-width:374px) {
+    .container{max-width: 75%;}
+
+ }
